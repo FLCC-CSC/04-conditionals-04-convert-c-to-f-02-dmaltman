@@ -1,8 +1,8 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Dawn Maltman
+# DATE: February 23, 2026
+# BRIEF DESCRIPTION:  Converting from Celsius to Fahrenheit with if statement
 
 
 
@@ -14,7 +14,29 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+def main():
+    converter()
+def converter():
+    print("===== Temperature Converter =====")
+    print()
+    print("  1. Convert from Celsius to Fahrenheit")
+    print("  2. Convert from Fahrenheit to Celsius")
+    print()
 
+    choice = float(input("Please choose from the above menu: "))
+    temp = float(input("Enter a temperature to convert: "))
+    print()
+
+    celsius = temp * 9/5 + 32
+    fahrenheit = (temp - 32) * 5/9
+
+    if choice == 1:
+        print(f"{temp} degrees Celsius is {celsius} degrees Fahrenheit.")
+
+    else:
+        print(f"{temp} degrees Fahrenheit is {fahrenheit} degrees Celsius.")
+
+main()
 
 
 
@@ -92,6 +114,7 @@ Enter a temperature to convert: -40
 '''
 
 1. What is one lesson you learned in this lab?
+When choosing between two choices, only need to write and if else statement instead of two if statements.
 
 
 
