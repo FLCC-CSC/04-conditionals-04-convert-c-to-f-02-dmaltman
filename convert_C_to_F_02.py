@@ -19,12 +19,12 @@ def main():
 def converter():
     print("===== Temperature Converter =====")
     print()
-    print("  1. Convert from Celsius to Fahrenheit")
-    print("  2. Convert from Fahrenheit to Celsius")
+    print(" 1. Convert from Celsius to Fahrenheit")
+    print(" 2. Convert from Fahrenheit to Celsius")
     print()
-    
+
     choice = int(input("Please choose from the above menu: "))
-    temp = int(input("Enter a temperature to convert: "))
+    temp = float(input("Enter a temperature to convert: "))
     print()
 
     celsius = temp * 9/5 + 32
